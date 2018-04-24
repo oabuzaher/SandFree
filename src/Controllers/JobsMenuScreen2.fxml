@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="Controllers.JobController2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3442;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="244.0" layoutY="24.0" text="Jobs" textFill="#0f93ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="24.0" text="Menu" textFill="#b2cff2">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField layoutX="35.0" layoutY="92.0" promptText="Job ID" />
+      <TextField layoutX="35.0" layoutY="139.0" promptText="Client ID" />
+      <TextField layoutX="35.0" layoutY="188.0" promptText="Creation Date" />
+      <TextField layoutX="35.0" layoutY="240.0" promptText="Completion Date" />
+      <TextField layoutX="35.0" layoutY="292.0" promptText="Labor Hours" />
+      <TableView layoutX="217.0" layoutY="88.0" prefHeight="233.0" prefWidth="234.0">
+        <columns>
+          <TableColumn prefWidth="116.0" text="Employee Name" />
+          <TableColumn prefWidth="117.0" text="Employee ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="475.0" layoutY="88.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #a5b6d1;" text="Add Employee" />
+      <Button layoutX="475.0" layoutY="136.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #a5b6d1;" text="Edit Employee" />
+      <Button layoutX="475.0" layoutY="185.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #a5b6d1;" text="Remove Employee" />
+      <Button layoutX="479.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #a5b6d1;" text="Delete Job" />
+      <Button layoutX="35.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #a5b6d1;" text="Back" />
+   </children>
+</AnchorPane>
